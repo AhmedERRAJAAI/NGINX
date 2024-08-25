@@ -1,0 +1,21 @@
+#Run docker image
+docker run -it --rm -d -p 8000:80 --name website nginx
+
+-i (interactive): Keeps STDIN open, allowing you to interact with the container if needed.
+
+-t (tty): Allocates a pseudo-TTY, which is useful for interactive processes. In this case, it's not strictly necessary since NGINX runs as a background service.
+
+--rm: removes any stoped containers, clean up containers and remove files system
+
+-d: stands for A daemon (sometimes spelled "demon") is a background process that runs continuously and performs tasks or services for other processes or users, often without direct user interaction. Daemons are commonly used in operating systems to handle various system functions and manage services.
+
+-p: ports
+
+--name: we can give the container a name
+
+nginx: image name
+
+
+#DOCKER TOP
+docker top website // container name
+- The docker top command displays information about the processes running inside a specified Docker container. It provides details similar to the top command in Unix-like systems, showing process information such as process ID (PID), user, CPU and memory usage, and command.

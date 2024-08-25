@@ -1,0 +1,15 @@
+#Help
+nginx -h: retruns list of available commands
+
+#version
+nginx -v : version of nginx
+nginx -V: version with more detailed information
+
+#START & STOP // run those commands inside the docker shell
+service nginx status
+service nginx start
+service nginx stop
+
+#Test the configuration file
+nginx -t: test the etc/nginx/nginx.conf
+nginx -T: in addition to test the conf file , this command prints the entire conf file in the console
